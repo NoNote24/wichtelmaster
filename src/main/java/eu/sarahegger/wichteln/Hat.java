@@ -43,7 +43,7 @@ public class Hat {
                 Random random2 = new Random();
                 int index2 = random2.nextInt(hasNotReceived.size());
                 Player player2 = hasNotReceived.get(index2);
-                if (player2.equals(player1) == false) {
+                if (player2.getEmail().equals(player1.getEmail()) == false) {
                     hasNotReceived.remove(player2);
                     pairs.put(player1, player2);
                     break;
